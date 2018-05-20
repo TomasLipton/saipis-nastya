@@ -1,7 +1,11 @@
 <?php
 session_start();
 
-error_reporting(E_ALL);
+if (explode('.',  $_SERVER['HTTP_HOST'])[1] == 'local'){
+    error_reporting(E_ALL);
+}else{
+    error_reporting(0);
+}
 
 require __DIR__ . '/autoload.php';
 
