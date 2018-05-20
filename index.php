@@ -15,5 +15,3 @@ $action = !empty($_GET['act']) ? ucfirst($_GET['act']) : 'Default';//экшен
 $controllerClassName = '\App\Controllers\\' . $ctrl;
 $controller = new $controllerClassName();
 $controller->action($action);
-
-//aaaaaaaaa
