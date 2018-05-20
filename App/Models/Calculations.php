@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Model;
 
-class Calculating
+class Calculations
     extends Model
 {
     const TABLE = 'calculating';

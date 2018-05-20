@@ -184,7 +184,7 @@
             <h2 class="mb-3">Введите название вашей компании</h2>
             <form class="form" id="inputCompanyNameForm">
                 <div class="form-group row">
-                    <label for="inputCompanyName" class="col-sm-2 col-form-label col-form-label-lg">Название</label>
+                    <label for="inputCompanyName" class="col-sm-2 col-form-label col-form-label-lg">Компания</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control form-control-lg" id="inputCompanyName" placeholder="Название" required>
                     </div>

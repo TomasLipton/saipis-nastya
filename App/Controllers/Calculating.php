@@ -4,22 +4,23 @@ namespace App\Controllers;
 
 
 use App\Controller;
-use \App\Models\Calculating as CalculatingModel;
+use \App\Models\Calculations as CalculatingModel;
 
 class Calculating
     extends Controller
 {
     public function actionAll()
     {
-        $calculatings = CalculatingModel::findAll();
-        require __DIR__ . '/../template/calculating/all.php';
+        $calculations = CalculatingModel::findByColumn('owner_id', $this->user->id);
+        require __DIR__ . '/../template/calculations/all.php';
     }
+
 
     public function actionOne()
     {
         $id = trim($_GET['id']);
         $calculation = CalculatingModel::findById($id);
-        require __DIR__ . '/../template/calculating/one.php';
+        require __DIR__ . '/../template/calculations/one.php';
     }
 
     public function actionSave()

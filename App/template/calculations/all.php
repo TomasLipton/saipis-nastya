@@ -27,7 +27,7 @@
             </thead>
             <tbody>
 
-            <?php foreach ($calculatings as $calculating): ?>
+            <?php foreach ($calculations as $calculating): ?>
                 <tr>
                     <th scope="row"><?php echo $calculating->id; ?></th>
                     <td><a href="/?ctrl=calculating&act=one&id=<?php echo $calculating->id; ?>"><?php echo $calculating->company_name; ?></a></td>
