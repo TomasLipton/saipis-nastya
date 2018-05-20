@@ -11,6 +11,6 @@ class User
 
     public static function isIn()
     {
-        return false;
+        return $_SESSION['user']['isIn'];
     }
 }
