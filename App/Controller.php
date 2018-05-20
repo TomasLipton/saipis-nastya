@@ -2,8 +2,6 @@
 
 namespace App;
 
-
-
 use App\Models\User;
 use App\Controllers\User as UserController;
 

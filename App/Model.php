@@ -2,8 +2,6 @@
 
 namespace App;
 
-//use App\Exceptions\E404;
-
 abstract class Model
 {
     public static function findAll()
@@ -27,7 +25,7 @@ abstract class Model
         )[0];
 
         if (empty($result)) {
-//            throw new E404();
+            return false;
         } else {
             return $result;
         }
@@ -83,7 +81,7 @@ VALUES
         $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE ' . $column . '=:value';
         $res = $db->query($sql, [':value' => $value], static::class);
         if (empty($res)) {
-//            throw new \App\Exceptions\Db();
+            return false;
         } else {
             return $res;
         }
@@ -112,6 +110,7 @@ VALUES
     public function save()
     {
         if (!isset($this->id)) {
+
             $this->insert();
         } else {
             $this->update();

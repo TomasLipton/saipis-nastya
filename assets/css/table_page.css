@@ -1,3 +1,7 @@
-.inputDataTable{
-    /*display: none;*/
+.hiddenData{
+    display: none;
+}
+
+.displayedData{
+    display: block;
 }
