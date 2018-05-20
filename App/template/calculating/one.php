@@ -25,5 +25,15 @@
 
 <?php require_once __DIR__ . '/../parts/footer.php' ?>
 
+<script>
+    window.onload = function () {
+        startCalculating.remove();
+        let inputs = document.querySelectorAll('.inputDataTable input');
+        for (let i = 0; i < inputs.length; i++){
+            inputs[i].readOnly = true;
+        }
+    }
+</script>
+
 </body>
 </html>
