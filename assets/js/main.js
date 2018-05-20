@@ -6,7 +6,7 @@ window.onload = function () {
     numbers = 4;
 
     /**
-     *
+     * receive company name, displays tables for calculating
      * @returns {boolean}
      */
     inputCompanyNameForm.onsubmit = function () {
@@ -27,7 +27,6 @@ window.onload = function () {
      */
     startCalculating.onclick = function () {
 
-
         let tableTrs = document.querySelectorAll('.inputDataTable tr');
         let modificationTableTrs = document.querySelectorAll('.modificationDataTable tr');
         let totalPreferenceScore = []; //Суммарная оценка предпочтения
@@ -43,7 +42,6 @@ window.onload = function () {
                 modificationTableInputs[j].setAttribute('value', numbers - inputs[j].value);
                 totalPreferenceScore[i][j] = modificationTableInputs[j].value;
             }
-
         }
 
         let totalPreferenceScoreSum = fillTotalPreferenceScore(totalPreferenceScore);
@@ -52,7 +50,7 @@ window.onload = function () {
     };
 
     /**
-     *
+     * Editable columns title
      * @type {NodeList}
      */
     let inputDataTableTrs = document.querySelectorAll('.inputDataTable tr')[0].childNodes;
@@ -88,7 +86,7 @@ window.onload = function () {
     }
 
     /**
-     *
+     * Calculating goalsWeight and put results into its table
      * @param goalsWeight
      */
     function fillGoalsWeight(goalsWeight) {
@@ -116,6 +114,9 @@ window.onload = function () {
         }
     }
 
+    /**
+     * saves results to the server
+     */
     function saveCalculating() {
         let xhr = new XMLHttpRequest();
 
