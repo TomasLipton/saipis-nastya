@@ -24,3 +24,9 @@ body {
 .container {
     padding: 0 15px;
 }
+
+.mostOptimalText{
+    width: 40px;
+    height: 11px;
+    display: inline-block;
+}

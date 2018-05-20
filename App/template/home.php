@@ -157,6 +157,7 @@
                     Искомые веса целей
                 </div>
                 <div class="card-body">
+                    <span class="bg-success text-white mostOptimalText"></span> — Наиболее оптимальный
                     <table class="table">
                         <thead class="thead-light">
                         <tr>
@@ -201,6 +202,8 @@
 </main>
 
 <?php require_once __DIR__ . '/parts/footer.php' ?>
+
 <script src="/assets/js/main.js"></script>
+
 </body>
 </html>

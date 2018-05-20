@@ -6,7 +6,7 @@
 
     <link rel="icon" href="/favicon.png">
 
-    <title>История операций</title>
+    <title><?php echo $calculation->company_name; ?></title>
 
     <?php require_once __DIR__ . '/../parts/css.php' ?>
 </head>
