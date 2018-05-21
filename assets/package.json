@@ -14,6 +14,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/tomaslipton/saipis-nastya#readme",
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
   }
 }

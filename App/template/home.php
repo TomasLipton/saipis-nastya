@@ -31,7 +31,7 @@
                     Исходная матрица предпочтений
                 </div>
                 <div class="card-body">
-                    <div id="inputTable">
+                    <div class="table-responsive" id="inputTable">
 
                         <table class="table table-bordered">
                             <tr>
@@ -84,7 +84,7 @@
                     Модифицированная матрица предпочтений
                 </div>
                 <div class="card-body">
-                    <div id="inputTable">
+                    <div class="table-responsive" id="inputTable">
                         <table class="table table-bordered">
                             <tr>
                                 <td></td>
@@ -130,7 +130,7 @@
                 <div class="card-header">
                     Суммарные оценки предпочтения
                 </div>
-                <div class="card-body">
+                <div class="card-body table-responsive">
                     <table class="table">
                         <thead class="thead-light">
                         <tr>
@@ -156,7 +156,7 @@
                 <div class="card-header">
                     Искомые веса целей
                 </div>
-                <div class="card-body">
+                <div class="card-body table-responsive">
                     <span class="bg-success text-white mostOptimalText"></span> — Наиболее оптимальный
                     <table class="table">
                         <thead class="thead-light">

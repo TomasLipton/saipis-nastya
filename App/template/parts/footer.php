@@ -4,3 +4,5 @@
     </div>
 </footer>
 
+<script src="/assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
