@@ -31,4 +31,11 @@ class Calculating
         $calculating->data = $_POST['data'];
         $calculating->insert();
     }
+
+    public function actionDelete(){
+        $id = trim($_GET['id']);
+        $calculation = CalculatingModel::findById($id);
+        $calculation->delete();
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 }

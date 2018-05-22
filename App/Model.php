@@ -119,11 +119,11 @@ VALUES
     }
 
 
-    public static function delete($id)
+    public function delete()
     {
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id = :id';
         $db = new Db();
-        $db->execute($sql, array('id' => $id));
+        $db->execute($sql, array('id' => $this->id));
     }
 
 }

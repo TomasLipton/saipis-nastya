@@ -13,6 +13,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/?ctrl=calculating&act=all">История операций <span class="sr-only">(current)</span></a>
                 </li>
+                <?php if('admin' == $this->user->role): ?>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="/?ctrl=index&act=AdminPanel">Панель администратора <span class="sr-only">(current)</span></a>
+                </li>
+                <?php endif; ?>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
