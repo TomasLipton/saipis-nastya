@@ -187,7 +187,7 @@
                 <div class="form-group row">
                     <label for="inputCompanyName" class="col-sm-2 col-form-label col-form-label-lg">Компания</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-lg" id="inputCompanyName" placeholder="Название" required>
+                        <input type="text" class="form-control form-control-lg" id="inputCompanyName" placeholder="Название" required autofocus>
                     </div>
                 </div>
                 <div class="form-group row mb-5">
